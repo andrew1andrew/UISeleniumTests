@@ -1,5 +1,5 @@
-from Pages.Base_page import BasePage
-from Locators.Page_locators import PageLocators as Locators
+from pages.Base_page import BasePage
+from locators.Page_locators import PageLocators as Locators
 import pytest
 import time
 

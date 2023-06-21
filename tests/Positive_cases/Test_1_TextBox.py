@@ -1,5 +1,5 @@
-from Pages.Base_page import BasePage
-from Pages.Main_page import MainPage
+from pages.Base_page import BasePage
+from pages.Main_page import MainPage
 import allure
 
 
