@@ -4,10 +4,12 @@ import allure
 
 
 
-@allure.title("Тест 1 - ")
-@allure.severity("blocker")
-def test_one_employee(driver):
-    base_page = BasePage(driver)
-    base_page.go_to_site()
-    main_page = MainPage(driver)
-    main_page.text_box()
+@allure.title("Test 1 - Text box")
+@allure.severity("critical")
+def test_text_box(driver):
+    with allure.step("Open the page"):
+        base_page = BasePage(driver)
+        base_page.go_to_site()
+    with allure.step(""):
+        main_page = MainPage(driver)
+        main_page.text_box()

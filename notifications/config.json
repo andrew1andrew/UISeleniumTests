@@ -5,7 +5,7 @@
     "environment": "Chrome",
     "comment": "build-project",
     "reportLink": "",
-    "language": "ru",
+    "language": "en",
     "allureFolder": "allure-report/",
     "enableChart": true
   },
