@@ -58,20 +58,34 @@ class MainPage(BasePage):
             fake = Faker()
             self.element_is_visible(Locators.TEXT_INPUT).send_keys(fake.first_name())
             self.elements_are_visible(Locators.TEXT_INPUT)[1].send_keys(fake.last_name())
-            self.element_is_visible(Locators.ELEMS_IN_SIGN_IN_PAGE).click()
+            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
         with allure.step("Enter date of birth and gender"):
             self.element_is_visible(Locators.NUM_INPUT).send_keys(randint(1, 28))
             self.driver.find_element(By.CSS_SELECTOR, f"option[value='{randint(1, 12)}']").click()
-            self.elements_are_visible(Locators.NUM_INPUT)[1].send_keys(randint(1950, 2018))
+            self.elements_are_visible(Locators.NUM_INPUT)[1].send_keys(randint(1960, 2018))
             self.sleep()
-            random_num = randint(1, 4)
-            print(random_num)
-            if random_num == 1 or 2 or 3:
-                self.driver.find_element(By.CSS_SELECTOR, f"option[value='{random_num}']").click()
-                self.element_is_visible(Locators.TEXT_INPUT).send_keys('Random gender')
-                self.driver.find_element(By.CSS_SELECTOR, f"option[value='{random_num}']").click()
-            else:
-                self.driver.find_element(By.CSS_SELECTOR, f"option[value='{random_num}']").click()
+            self.driver.find_elements(By.CSS_SELECTOR, f"option[value='{randint(1, 3)}']")[1].click()
+            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+        with allure.step("Entering email"):
+            try:
+                email = fake.free_email().split("@")
+                print(email[0]+email[0])
+                self.element_is_visible(Locators.TEXT_INPUT).send_keys(email[0]+email[0])
+            except TimeoutException or NoSuchElementException:
+                self.driver.find_element(By.CSS_SELECTOR, "div[class='enBDyd ']").click()
+            self.sleep()
+            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+        with allure.step("Entering password"):
+            password = fake.password()
+            self.element_is_visible(Locators.PASSWORD_INPUT).send_keys(password)
+            self.elements_are_visible(Locators.PASSWORD_INPUT)[1].send_keys(password)
+            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+        with allure.step(""):
+            # self.page_loading(driver)
+            self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
+            self.sleep()
+            self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
+            time.sleep(2)
 
 
 
