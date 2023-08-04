@@ -12,4 +12,4 @@ def test_5(driver):
         base_page.go_to_site()
     with allure.step("Checking that "):
         main_page = MainPage(driver)
-        main_page.user_registration()
+        main_page.user_registration(driver)
