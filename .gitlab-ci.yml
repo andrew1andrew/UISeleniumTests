@@ -1,0 +1,58 @@
+stages:
+  - testing
+  - allurting
+  - deploy
+
+testing:
+  stage: testing
+  image: python:3.10
+  services:
+    - selenium/standalone-chrome:latest
+  variables:
+    SE_NODE_SESSION_TIMEOUT: 2
+  tags:
+    - docker-vm-slave
+  allow_failure: true
+  before_script:
+    - export DISPLAY=:1
+    - export TEST_URL="https://www.google.com/"
+    - apt-get update
+    - pip install -r requirements.txt
+    - python3 -m pip uninstall -y urllib3-secure-extra
+  script:
+     - pytest --alluredir=./allure-results Tests/Positive_cases
+  artifacts:
+    when: always
+    expire_in: 1 day
+    paths:
+      - ./allure-results
+
+allurting:
+  stage: allurting
+  image: frankescobar/allure-docker-service
+  tags:
+    - docker-vm-slave
+  script:
+    - allure generate -c ./allure-results -o ./allure-report
+  artifacts:
+    paths:
+      - ./allure-results
+      - ./allure-report
+    expire_in: 1 day
+  rules:
+    - when: always
+
+pages:
+  stage: deploy
+  image: openjdk:11-jdk
+  tags:
+    - docker-vm-slave
+  script:
+    - java "-DconfigFile=./notifications/config.json" -jar ./notifications/allure-notifications-4.2.1.jar
+    - mkdir public
+    - mv ./allure-report/* public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - when: always
