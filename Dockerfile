@@ -1,5 +1,5 @@
 FROM python
 WORKDIR /container_tests/
-COPY requirements.txt .
+COPY . .
 RUN pip install -r requirements.txt
-CMD python -m pytest -s --alluredir=allure_results/ /container_tests/Tests/Positive_cases
+CMD python -m pytest -s --alluredir=allure_results/ Tests/Positive_cases/*
