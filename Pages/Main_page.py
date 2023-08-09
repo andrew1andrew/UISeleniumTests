@@ -51,7 +51,7 @@ class MainPage(BasePage):
     def user_registration(self):
         self.element_is_visible(Locators.SIGN_IN_BUTTON).click()
         self.sleep()
-        self.driver.find_elements(By.CSS_SELECTOR, "span[jsname='V67aGc']")[2].click()
+        self.driver.find_elements(By.CSS_SELECTOR, "span[jsname*='V67']")[2].click()
         self.element_is_visible(Locators.BUTTON_FOR_PERSONAL_USE).click()
         self.sleep()
         with allure.step("Enter first and last name"):

@@ -9,7 +9,7 @@ class BasePage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.url = "https://www.google.com/"
+        self.url = "https://www.google.com/ncr"
 
     def go_to_site(self):
         return self.driver.get(self.url)
