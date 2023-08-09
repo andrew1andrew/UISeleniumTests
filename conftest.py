@@ -17,12 +17,14 @@ from selenium.webdriver.chrome.options import Options
 """"For docker"""
 @pytest.fixture()
 def driver():
-    options = webdriver.ChromeOptions()
-    options.add_argument('--no-sandbox')
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    driver = webdriver.Remote(
-        command_executor='http://selenium__standalone-chrome:4444/wd/hub',
-        options=options)
+    service = Service()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument("--window-size=1920,1080")
+    driver = webdriver.Chrome(service=service, options=chrome_options)
     yield driver
-    driver.quit
+    driver.quit()
+

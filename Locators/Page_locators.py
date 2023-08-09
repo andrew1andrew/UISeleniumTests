@@ -7,7 +7,7 @@ class PageLocators:
     FIRST_SEARCH = (By.CSS_SELECTOR, "div[class='TzHB6b cLjAic K7khPe']")
     GO_TO_THE_FIRST_SEARCH = (By.CSS_SELECTOR, "div[class*='TbwUpd NJj']")
     GOOGLE_LOGO = (By.CSS_SELECTOR, "a[title='Go to Google Home']")
-    SIGN_IN_BUTTON = (By.CSS_SELECTOR, "span[class='gb_Od']")
+    SIGN_IN_BUTTON = (By.CSS_SELECTOR, "span[class*='gb']")
     ELEMS_GO_NEXT = (By.CSS_SELECTOR, "span[jsname='V67aGc']")
     BUTTON_FOR_PERSONAL_USE = (By.CSS_SELECTOR, "span[jsname='K4r5Ff']")
     TEXT_INPUT = (By.CSS_SELECTOR, "input[type='text']")
