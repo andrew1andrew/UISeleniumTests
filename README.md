@@ -2,25 +2,25 @@
 <a name="MyToolsAndTechnologies"><h2>:trophy: Мои инструменты и технологии</h2></a>
 <div class="image-container"style="display:flex; flex-wrap:wrap">
   <a href="https://www.python.org/">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\python.png" alt="Python" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\python.png" alt="Python" class="project-image">
   </a>
   <a href="https://www.jetbrains.com/pycharm/">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\PyCharm.png" alt="PyCharm" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\PyCharm.png" alt="PyCharm" class="project-image">
   </a>
   <a href="https://www.selenium.dev/">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Selenium.png" alt="Selenium" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Selenium.png" alt="Selenium" class="project-image">
   </a>
   <a href="https://github.com/allure-framework">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Allure.png" alt="Allure" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Allure.png" alt="Allure" class="project-image">
   </a>
   <a href="https://www.docker.com/">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Docker.png" alt="Docker" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Docker.png" alt="Docker" class="project-image">
   </a>
   <a href="https://about.gitlab.com/">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Gitlab.png" alt="GitLab" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Gitlab.png" alt="GitLab" class="project-image">
   </a>
   <a href="https://web.telegram.org/k/">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Telegram.png" alt="Telegram" class="project-image">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Telegram.png" alt="Telegram" class="project-image">
   </a>
 </div>
 <a name="Description"><h2>Description</h2></a>
