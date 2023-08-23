@@ -6,24 +6,6 @@
   <a href="https://www.python.org/" style="text-decoration:none; cursor:pointer; color:inherit">
     <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\python.png" alt="Python" class="project-image">
   </a>
-  <a href="https://www.jetbrains.com/pycharm/" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\PyCharm.png" alt="PyCharm" class="project-image">
-  </a>
-  <a href="https://www.selenium.dev/" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Selenium.png" alt="Selenium" class="project-image">
-  </a>
-  <a href="https://github.com/allure-framework" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Allure.png" alt="Allure" class="project-image">
-  </a>
-  <a href="https://www.docker.com/" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Docker.png" alt="Docker" class="project-image">
-  </a>
-  <a href="https://about.gitlab.com/" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Gitlab.png" alt="GitLab" class="project-image">
-  </a>
-  <a href="https://web.telegram.org/k/" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Telegram.png" alt="Telegram" class="project-image">
-  </a>
 </div>
 
 <a name="Description"><h2>Description</h2></a>
