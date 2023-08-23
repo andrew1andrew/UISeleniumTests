@@ -3,11 +3,11 @@
 <a name="MyToolsAndTechnologies"><h2>:trophy: My tools and technologies</h2></a>
 <p  align="center">
 
-<p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="50" height="50"/> </a> 
-<a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/354321/selenium.svg" alt="selenium" width="50" height="50"/> </a>
-<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="50" height="50"/> </a>
-<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png" alt="pycharm" width="50" height="50"/> </a>
-<a href="https://github.com/allure-framework" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/5879127?s=280&v=4" alt="pycharm" width="50" height="50"/> </a> </p>
+<p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" style="margin-right:10px" alt="python" width="50" height="50"/> </a> 
+<a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/354321/selenium.svg" style="margin-right:10px" alt="selenium" width="50" height="50"/> </a>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" style="margin-right:10px" alt="docker" width="50" height="50"/> </a>
+<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png" style="margin-right:10px" alt="pycharm" width="50" height="50"/> </a>
+<a href="https://github.com/allure-framework" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/5879127?s=280&v=4" style="margin-right:10px" alt="pycharm" width="50" height="50"/> </a> </p>
 </br>
 
 <a name="Description"><h2>Description</h2></a>
