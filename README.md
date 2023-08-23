@@ -19,42 +19,43 @@ Autotests in this project are written in `Python` using `Selenium`.\
 `Allure Report` - for visualization of test results.\
 `Telegram Bot` - for notifications about test results.
 
-<a name="ImplementedСhecks"><h2>Implemented checks - :heavy_check_mark:  Positive cases:</h2></a>
 
-Open the main <a href = "https://www.google.com/">google page</br></a>
+<a name="Positive cases"><h2>:heavy_check_mark:  Positive cases:</h2></a>
 
-:partly_sunny: Correct display of the
+1. Open the main <a href = "https://www.google.com/">google page</br></a>
+
+2. :partly_sunny: Correct display of the
 <a href = "https://www.google.com/search?q=Weather+in+Paris&sca_esv=559361602&hl=en&sxsrf=AB5stBjLpIxQSV8xei5XMRL_rMQcuSyn5w%3A1692794506026&source=hp&ei=if7lZP64PJ2hkdUP166PsAI&iflsig=AD69kcEAAAAAZOYMmm99-32Aiq2260zSqnfvpREPaBaF&ved=0ahUKEwi-odT55vKAAxWdUKQEHVfXAyYQ4dUDCAs&uact=5&oq=Weather+in+Paris&gs_lp=Egdnd3Mtd2l6IhBXZWF0aGVyIGluIFBhcmlzMg0QLhjHARjRAxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSO0JUIMCWIMCcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAvgBAagCCg&sclient=gws-wiz">search result</a> "Weather in Paris"
  </br>
 
-:computer_mouse: Click on the first
+3. :computer_mouse: Click on the first
 <a href = "https://www.google.com/search?q=London&sca_esv=559361602&hl=en&sxsrf=AB5stBjFY6ypgp44K5pzuGLbbT_2ULWlbg%3A1692801238886&ei=1hjmZN3aNduAhbIPn9uMkAw&ved=0ahUKEwjdnZOEgPOAAxVbQEEAHZ8tA8IQ4dUDCA8&uact=5&oq=London&gs_lp=Egxnd3Mtd2l6LXNlcnAiBkxvbmRvbjIHECMYigUYJzINEAAYigUYsQMYgwEYQzINEAAYigUYsQMYgwEYQzIHEAAYigUYQzIHEAAYigUYQzIHEAAYigUYQzIHEAAYigUYQzINEC4YigUYsQMYgwEYQzIHEAAYigUYQzIHEAAYigUYQ0j2DlD7BljFDXADeAGQAQCYAdIEoAGtCaoBCTItMS4xLjAuMbgBA8gBAPgBAcICBxAjGLADGCfCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICBBAjGCfCAgsQABiABBixAxiDAcICERAuGIMBGMcBGLEDGNEDGIAEwgILEC4YgwEYsQMYgATCAgUQABiABMICExAuGIoFGLEDGIMBGMcBGNEDGEPiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp#cobssid=s">search result</a> - "London Wikipedia"
  </br>
 
-Returning to the
+4. Returning to the
 <a href = "https://www.google.com/">main page</a> after clicking on the google logo
  </br>
 
-User
+5. User
 <a href = "https://accounts.google.com/signup/v2/createaccount?cc=GB&continue=https%3A%2F%2Fmyaccount.google.com%2F&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en-GB&service=accountsettings&authuser=0">registration</a>
  </br>
 
 <a name="Positive cases"><h2>:x:  Negative cases:</h2></a>
 </br>
 
-<a href = "https://www.google.com/">Search</a> an empty string
+6. <a href = "https://www.google.com/">Search</a> an empty string
 </br>
 
-<a href = "https://www.google.com/search?q=qweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu&sca_esv=559361602&hl=en&sxsrf=AB5stBgHlg3Zs_W57TVuQ3hE85XAKgJ6_g%3A1692803125936&ei=NSDmZKbaOMK7hbIPko2lcA&ved=0ahUKEwjmyPuHh_OAAxXCXUEAHZJGCQ4Q4dUDCA8&uact=5&oq=qweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu&gs_lp=Egxnd3Mtd2l6LXNlcnAiOHF3ZXVyaGV3b2l0cmdoZXdxeWlncXJ3ZW95dHVxd2V1cmhld29pdHJnaGV3cXlpZ3Fyd2VveXR1MgcQIxiwAxgnMg0QABhHGNYEGMkDGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgsQABiKBRiSAxiwA0iMDlDuC1juC3ABeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQHCAgQQABhH4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">Search</a> non existent word
+7. <a href = "https://www.google.com/search?q=qweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu&sca_esv=559361602&hl=en&sxsrf=AB5stBgHlg3Zs_W57TVuQ3hE85XAKgJ6_g%3A1692803125936&ei=NSDmZKbaOMK7hbIPko2lcA&ved=0ahUKEwjmyPuHh_OAAxXCXUEAHZJGCQ4Q4dUDCA8&uact=5&oq=qweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu&gs_lp=Egxnd3Mtd2l6LXNlcnAiOHF3ZXVyaGV3b2l0cmdoZXdxeWlncXJ3ZW95dHVxd2V1cmhld29pdHJnaGV3cXlpZ3Fyd2VveXR1MgcQIxiwAxgnMg0QABhHGNYEGMkDGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgsQABiKBRiSAxiwA0iMDlDuC1juC3ABeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQHCAgQQABhH4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">Search</a> non existent word
 </br>
 
-<a href = "https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dqweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu%26sca_esv%3D559361602%26hl%3Den%26sxsrf%3DAB5stBgHlg3Zs_W57TVuQ3hE85XAKgJ6_g%253A1692803125936%26ei%3DNSDmZKbaOMK7hbIPko2lcA%26ved%3D0ahUKEwjmyPuHh_OAAxXCXUEAHZJGCQ4Q4dUDCA8%26uact%3D5%26oq%3Dqweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiOHF3ZXVyaGV3b2l0cmdoZXdxeWlncXJ3ZW95dHVxd2V1cmhld29pdHJnaGV3cXlpZ3Fyd2VveXR1MgcQIxiwAxgnMg0QABhHGNYEGMkDGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgsQABiKBRiSAxiwA0iMDlDuC1juC3ABeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQHCAgQQABhH4gMEGAAgQYgGAZAGCg%26sclient%3Dgws-wiz-serp&ec=GAlAAQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S738425616%3A1692803323370710">Email login</a> with empty data
+8. <a href = "https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dqweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu%26sca_esv%3D559361602%26hl%3Den%26sxsrf%3DAB5stBgHlg3Zs_W57TVuQ3hE85XAKgJ6_g%253A1692803125936%26ei%3DNSDmZKbaOMK7hbIPko2lcA%26ved%3D0ahUKEwjmyPuHh_OAAxXCXUEAHZJGCQ4Q4dUDCA8%26uact%3D5%26oq%3Dqweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiOHF3ZXVyaGV3b2l0cmdoZXdxeWlncXJ3ZW95dHVxd2V1cmhld29pdHJnaGV3cXlpZ3Fyd2VveXR1MgcQIxiwAxgnMg0QABhHGNYEGMkDGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgsQABiKBRiSAxiwA0iMDlDuC1juC3ABeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQHCAgQQABhH4gMEGAAgQYgGAZAGCg%26sclient%3Dgws-wiz-serp&ec=GAlAAQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S738425616%3A1692803323370710">Email login</a> with empty data
 </br>
 
-Inserting an invalid image 
+9. Inserting an invalid image 
 <a href = "https://www.google.com/search?q=photo&tbm=isch&ved=2ahUKEwjks7LJiPOAAxXwW0EAHSoSBT0Q2-cCegQIABAA&oq=photo&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyBQgAEIAEMggIABCABBCxAzIICAAQgAQQsQM6BAgjECc6BwgjEOoCECc6CwgAEIAEELEDEIMBOgQIABADUMAGWNMWYPMZaAFwAHgAgAG6AYgBhgeSAQMwLjaYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=yyHmZKSiI_C3hbIPqqSU6AM&bih=963&biw=1920&hl=en">link</a>
 </br>
 
-Non-existent language in the
+10. Non-existent language in the
 <a href = "https://translate.google.co.uk/?hl=en&tab=TT">translator</a>
 </br>
