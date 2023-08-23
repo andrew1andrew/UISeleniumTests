@@ -19,8 +19,7 @@ Autotests in this project are written in `Python` using `Selenium`.\
 `Allure Report` - for visualization of test results.\
 `Telegram Bot` - for notifications about test results.
 
-<a name="ImplementedСhecks"><h2>:heavy_check_mark:  Implemented checks:</h2></a>
-<a name="Positive cases"><h2>:heavy_check_mark:  Positive cases:</h2></a>
+<a name="ImplementedСhecks"><h2>Implemented checks - :heavy_check_mark:  Positive cases:</h2></a>
 
 Open the main <a href = "https://www.google.com/">google page</br></a>
 
