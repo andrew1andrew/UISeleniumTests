@@ -1,12 +1,10 @@
 <h1>Welcome!</br>
 
-<a name="MyToolsAndTechnologies"><h2>:trophy: Мои инструменты и технологии</h2></a>
+<a name="MyToolsAndTechnologies"><h2>:trophy: My tools and technologies</h2></a>
+<p  align="center">
 
-<div class="image-container"style="display:flex; flex-wrap:wrap">
-  <a href="https://www.python.org/" style="text-decoration:none; cursor:pointer; color:inherit">
-    <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\python.png" alt="Python" class="project-image">
-  </a>
-</div>
+<p align="left"> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> </p>
+</br>
 
 <a name="Description"><h2>Description</h2></a>
 Autotests in this project are written in `Python` using `Selenium`.\
