@@ -1,12 +1,47 @@
-<h1>Добро пожаловать!</br>
+<h1>Welcome!</br>
 <a name="MyToolsAndTechnologies"><h2>:trophy: Мои инструменты и технологии</h2></a>
-<p  align="center">
+<div class="image-container"style="display:flex; flex-wrap:wrap">
+  <a href="https://www.python.org/">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\python.png" alt="Python" class="project-image">
+  </a>
+  <a href="https://www.jetbrains.com/pycharm/">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\PyCharm.png" alt="PyCharm" class="project-image">
+  </a>
+  <a href="https://www.selenium.dev/">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Selenium.png" alt="Selenium" class="project-image">
+  </a>
+  <a href="https://github.com/allure-framework">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Allure.png" alt="Allure" class="project-image">
+  </a>
+  <a href="https://www.docker.com/">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Docker.png" alt="Docker" class="project-image">
+  </a>
+  <a href="https://about.gitlab.com/">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Gitlab.png" alt="GitLab" class="project-image">
+  </a>
+  <a href="https://web.telegram.org/k/">
+    <img style="max-width:40px; max-height:40px; margin-right:10px" src="D:\UISeleniumTests\UISeleniumTests\Design\Icons\Telegram.png" alt="Telegram" class="project-image">
+  </a>
+</div>
+<a name="Description"><h2>Description</h2></a>
+Autotests in this project are written in `Python` using `Selenium`.\
+`Gitlab CI/CD` - CI/CD to run tests remotely.\
+`Docker` - for running browsers in a container.\
+`Allure Report` - for visualization of test results.\
+`Telegram Bot` - for notifications about test results.
 
-<code><a href = "https://www.python.org/">![This is an image](/Design/Icons/python.png)</a></code>
-<code><a href = "https://www.jetbrains.com/pycharm/">![This is an image](/Design/Icons/PyCharm.png)</a></code>
-<code><a href = "https://www.selenium.dev/">![This is an image](/Design/Icons/Selenium.png)</a></code>
-<code><a href = "https://github.com/allure-framework">![This is an image](/Design/Icons/Allure.png)</a></code>
-<code><a href = "https://www.docker.com/">![This is an image](/Design/Icons/Docker.png)</a></code>
-<code><a href = "https://about.gitlab.com/">![This is an image](/Design/Icons/Gitlab.png)</a></code>
-<code><a href = "https://web.telegram.org/k/">![This is an image](/Design/Icons/Telegram.png)</a></code>
+<a name="ImplementedСhecks"><h2>:heavy_check_mark:  Implemented checks:</h2></a>
+
+Open the main <a href = "https://www.google.com/">google page</br></a>
+
+Correct display of the
+<a href = "https://www.google.com/search?q=Weather+in+Paris&sca_esv=559361602&hl=en&sxsrf=AB5stBjLpIxQSV8xei5XMRL_rMQcuSyn5w%3A1692794506026&source=hp&ei=if7lZP64PJ2hkdUP166PsAI&iflsig=AD69kcEAAAAAZOYMmm99-32Aiq2260zSqnfvpREPaBaF&ved=0ahUKEwi-odT55vKAAxWdUKQEHVfXAyYQ4dUDCAs&uact=5&oq=Weather+in+Paris&gs_lp=Egdnd3Mtd2l6IhBXZWF0aGVyIGluIFBhcmlzMg0QLhjHARjRAxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSO0JUIMCWIMCcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAvgBAagCCg&sclient=gws-wiz">search result</a> 'Weather in Paris'
+ </br>
+
+Открытие страниц 
+<a href = "https://astondevs.ru/industries/ecommerce">eCommerce</a>/<a href = "https://astondevs.ru/services/mobile-development">Click on the first search result</a>
+</br>
+
+🔎 Открытие <a href = "https://astondevs.ru/find-developers/react-js">страницы React</a> и проверка ее
+содержимого
 </br>
