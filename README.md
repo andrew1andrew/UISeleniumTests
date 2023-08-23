@@ -1,4 +1,5 @@
 <h1>Welcome!</br>
+
 <a name="MyToolsAndTechnologies"><h2>:trophy: Мои инструменты и технологии</h2></a>
 <div class="image-container"style="display:flex; flex-wrap:wrap">
   <a href="https://www.python.org/" style="text-decoration:none; cursor:pointer; color:inherit">
@@ -23,6 +24,7 @@
     <img style="max-width:40px; max-height:40px; margin-right:10px" src="Design\Icons\Telegram.png" alt="Telegram" class="project-image">
   </a>
 </div>
+
 <a name="Description"><h2>Description</h2></a>
 Autotests in this project are written in `Python` using `Selenium`.\
 `Gitlab CI/CD` - CI/CD to run tests remotely.\
