@@ -22,10 +22,10 @@ Autotests in this project are written in `Python` using `Selenium`.\
 \
 <a name="Positive cases"><h2>:heavy_check_mark:  Positive cases:</h2></a>
 
-1. :newspaper:	Open the main <a href = "https://www.google.com/">google page</br></a>
+1. :newspaper:	Open the main <a href = "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI">google page</br></a>
 
 2. :partly_sunny: Correct display of the
-<a href = "https://www.google.com/search?q=Weather+in+Paris&sca_esv=559361602&hl=en&sxsrf=AB5stBjLpIxQSV8xei5XMRL_rMQcuSyn5w%3A1692794506026&source=hp&ei=if7lZP64PJ2hkdUP166PsAI&iflsig=AD69kcEAAAAAZOYMmm99-32Aiq2260zSqnfvpREPaBaF&ved=0ahUKEwi-odT55vKAAxWdUKQEHVfXAyYQ4dUDCAs&uact=5&oq=Weather+in+Paris&gs_lp=Egdnd3Mtd2l6IhBXZWF0aGVyIGluIFBhcmlzMg0QLhjHARjRAxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSO0JUIMCWIMCcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAvgBAagCCg&sclient=gws-wiz">search result</a> "Weather in Paris"
+<a href = "https://www.google.com/search?q=Weather+in+Paris&sca_esv=559361602&hl=en&sxsrf=AB5stBjLpIxQSV8xei5XMRL_rMQcuSyn5w%3A1692794506026&source=hp&ei=if7lZP64PJ2hkdUP166PsAI&iflsig=AD69kcEAAAAAZOYMmm99-32Aiq2260zSqnfvpREPaBaF&ved=0ahUKEwi-odT55vKAAxWdUKQEHVfXAyYQ4dUDCAs&uact=5&oq=Weather+in+Paris&gs_lp=Egdnd3Mtd2l6IhBXZWF0aGVyIGluIFBhcmlzMg0QLhjHARjRAxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSO0JUIMCWIMCcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAvgBAagCCg&sclient=gws-wiz">search result</a> - "Weather in Paris"
  </br>
 
 3. :computer_mouse: Click on the first
@@ -59,3 +59,7 @@ Autotests in this project are written in `Python` using `Selenium`.\
 10. :warning: Non-existent language in the
 <a href = "https://translate.google.co.uk/?hl=en&tab=TT">translator</a>
 </br>
+
+<a name="Project"><h2>Project</h2></a>
+<code><a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI"> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="margin-right:20px" alt="GoogleLogo" width="100" height="100"/>  </p></a></code>Test automation project for <a target="_blank" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI">Google</a> search engine.
+ :star2:
