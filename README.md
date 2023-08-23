@@ -43,7 +43,7 @@ Autotests in this project are written in `Python` using `Selenium`.\
 <a name="Positive cases"><h2>:x:  Negative cases:</h2></a>
 </br>
 
-6. :page_with_curl:	 <a href = "https://www.google.com/">Search</a> an empty string
+6. :o:	 <a href = "https://www.google.com/">Search</a> an empty string
 </br>
 
 7. :no_entry_sign: <a href = "https://www.google.com/search?q=qweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu&sca_esv=559361602&hl=en&sxsrf=AB5stBgHlg3Zs_W57TVuQ3hE85XAKgJ6_g%3A1692803125936&ei=NSDmZKbaOMK7hbIPko2lcA&ved=0ahUKEwjmyPuHh_OAAxXCXUEAHZJGCQ4Q4dUDCA8&uact=5&oq=qweurhewoitrghewqyigqrweoytuqweurhewoitrghewqyigqrweoytu&gs_lp=Egxnd3Mtd2l6LXNlcnAiOHF3ZXVyaGV3b2l0cmdoZXdxeWlncXJ3ZW95dHVxd2V1cmhld29pdHJnaGV3cXlpZ3Fyd2VveXR1MgcQIxiwAxgnMg0QABhHGNYEGMkDGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgsQABiKBRiSAxiwA0iMDlDuC1juC3ABeAKQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQHCAgQQABhH4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">Search</a> non existent word
