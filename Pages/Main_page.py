@@ -1,5 +1,4 @@
 import allure
-
 from Pages.Base_page import BasePage
 from Locators.Page_locators import PageLocators as Locators
 from selenium.webdriver.common.keys import Keys
@@ -48,6 +47,17 @@ class MainPage(BasePage):
         assert driver.title == "Google"
         assert self.assert_element_is_visible(Locators.GOOGLE_LOGO) is None
 
+    def generation_username(self):
+        try:
+            fake = Faker()
+            email = fake.free_email().split("@")
+            self.element_is_visible(Locators.TEXT_INPUT).clear()
+            self.element_is_visible(Locators.TEXT_INPUT).send_keys(email[0] + email[0])
+        except TimeoutException or NoSuchElementException:
+            self.driver.find_element(By.CSS_SELECTOR, "div[class='enBDyd ']").click()
+        self.sleep()
+        self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+
     def user_registration(self):
         self.element_is_visible(Locators.SIGN_IN_BUTTON).click()
         self.sleep()
@@ -67,21 +77,16 @@ class MainPage(BasePage):
             self.driver.find_elements(By.CSS_SELECTOR, f"option[value='{randint(1, 3)}']")[1].click()
             self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
         with allure.step("Entering email"):
-            try:
-                email = fake.free_email().split("@")
-                print(email[0]+email[0])
-                self.element_is_visible(Locators.TEXT_INPUT).send_keys(email[0]+email[0])
-            except TimeoutException or NoSuchElementException:
-                self.driver.find_element(By.CSS_SELECTOR, "div[class='enBDyd ']").click()
-            self.sleep()
-            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+            self.generation_username()
+            if self.assert_element_is_visible(Locators.ELEM_IF_USERNAME_IS_TAKEN) is not None:
+                self.generation_username()
         with allure.step("Entering password"):
             password = fake.password()
             self.element_is_visible(Locators.PASSWORD_INPUT).send_keys(password)
             self.elements_are_visible(Locators.PASSWORD_INPUT)[1].send_keys(password)
             self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+            self.sleep()
         with allure.step(""):
-            # self.page_loading(driver)
             self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
             self.sleep()
             self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()

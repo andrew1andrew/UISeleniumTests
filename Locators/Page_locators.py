@@ -17,3 +17,4 @@ class PageLocators:
     TEXT_CHOOSE_YOU_GMAIL_ADDRES = (By.CSS_SELECTOR, "span[jsslot]")
     PASSWORD_INPUT = (By.CSS_SELECTOR, "input[type='password']")
     BUTTON_SKIP_NEXT = (By.CSS_SELECTOR, "button[class*='VfPpkd']")
+    ELEM_IF_USERNAME_IS_TAKEN = (By.CSS_SELECTOR, "div[class*='o6c']")
