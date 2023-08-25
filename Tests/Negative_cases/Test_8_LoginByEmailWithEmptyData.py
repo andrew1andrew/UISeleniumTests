@@ -3,12 +3,12 @@ from Pages.Account_page import AccountPage
 import allure
 
 
-@allure.title("Test 5 - User registration")
+@allure.title("Test 8 - Email login with empty data")
 @allure.severity("blocker")
-def test_5(driver):
+def test_8(driver):
     with allure.step("Open the page"):
         base_page = BasePage(driver)
         base_page.go_to_site()
-    with allure.step("Checking user registration"):
+    with allure.step("Checking that the text 'Enter an email or phone number' appears"):
         account_page = AccountPage(driver)
-        account_page.user_registration()
+        account_page.login_by_mail_with_empty_date()

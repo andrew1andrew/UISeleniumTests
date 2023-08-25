@@ -3,14 +3,7 @@ from Pages.Base_page import BasePage
 from Locators.Page_locators import PageLocators as Locators
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
-from faker import Faker
-from random import randint
-import pytest
-from selenium.webdriver.support.ui import WebDriverWait as Wait
-from selenium.webdriver.support import expected_conditions as EC
-import time
-from selenium.common import TimeoutException, NoSuchElementException
-from selenium.webdriver.common.by import By
+import re
 
 
 class MainPage(BasePage):
@@ -47,51 +40,36 @@ class MainPage(BasePage):
         assert driver.title == "Google"
         assert self.assert_element_is_visible(Locators.GOOGLE_LOGO) is None
 
-    def generation_username(self):
-        try:
-            fake = Faker()
-            email = fake.free_email().split("@")
-            self.element_is_visible(Locators.TEXT_INPUT).clear()
-            self.element_is_visible(Locators.TEXT_INPUT).send_keys(email[0] + email[0])
-        except TimeoutException or NoSuchElementException:
-            self.driver.find_element(By.CSS_SELECTOR, "div[class='enBDyd ']").click()
+    def search_an_empty_string(self, driver):
+        self.find_in_search("")
         self.sleep()
-        self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
+        assert driver.title == "Google"
 
-    def user_registration(self):
-        self.element_is_visible(Locators.SIGN_IN_BUTTON).click()
+    def search_non_existent_word(self, driver):
+        self.find_in_search("sdasadjkqwasdvsdczxv")
         self.sleep()
-        self.driver.find_elements(By.CSS_SELECTOR, "span[jsname*='V67']")[2].click()
-        self.element_is_visible(Locators.BUTTON_FOR_PERSONAL_USE).click()
-        self.sleep()
-        with allure.step("Enter first and last name"):
-            fake = Faker()
-            self.element_is_visible(Locators.TEXT_INPUT).send_keys(fake.first_name())
-            self.elements_are_visible(Locators.TEXT_INPUT)[1].send_keys(fake.last_name())
-            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
-        with allure.step("Enter date of birth and gender"):
-            self.element_is_visible(Locators.NUM_INPUT).send_keys(randint(1, 28))
-            self.driver.find_element(By.CSS_SELECTOR, f"option[value='{randint(1, 12)}']").click()
-            self.elements_are_visible(Locators.NUM_INPUT)[1].send_keys(randint(1960, 2018))
-            self.sleep()
-            self.driver.find_elements(By.CSS_SELECTOR, f"option[value='{randint(1, 3)}']")[1].click()
-            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
-        with allure.step("Entering email"):
-            self.generation_username()
-            if self.assert_element_is_visible(Locators.ELEM_IF_USERNAME_IS_TAKEN) is not None:
-                self.generation_username()
-        with allure.step("Entering password"):
-            password = fake.password()
-            self.element_is_visible(Locators.PASSWORD_INPUT).send_keys(password)
-            self.elements_are_visible(Locators.PASSWORD_INPUT)[1].send_keys(password)
-            self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
-            self.sleep()
-        with allure.step(""):
-            self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
-            self.sleep()
-            self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
-            time.sleep(2)
+        assert driver.title == "sdasadjkqwasdvsdczxv - Google Search"
+        assert self.assert_element_is_visible(Locators.SVG_ERROR_PAGE_OPENING) is not None
+        with allure.step("Checking that the search result is zero"):
+            result_stats = self.element_is_visible(Locators.RESULT_STATS).text
+            matches = re.findall(r'\b\d+\b', result_stats)
+            if matches:
+                result = int(matches[0])
+                assert result == 0
 
+    def invalid_image_link(self):
+        self.find_in_search("Photo")
+        self.element_is_visible(Locators.GO_TO_IMAGE).click()
+        self.element_is_visible(Locators.GOOGLE_LENS).click()
+        self.element_is_visible(Locators.INPUT_GOOGLE_LENS).send_keys("hhttps://google.com")
+        self.element_is_visible(Locators.SEARCH_GOOGLE_LENS).click()
+        self.sleep()
+        assert self.element_is_visible(Locators.ERROR_TEXT_GOOGLE_LENS).text == "Can't use this link. Check that your link starts with 'http://' or 'https://' to try again."
+
+    def go_to_the_google_maps(self):
+        self.find_in_search("Maps")
+        self.element_is_visible(Locators.GOOGLE_MAPS).click()
+        self.sleep()
 
 
 
