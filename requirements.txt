@@ -1,4 +1,4 @@
-selenium==4.10.0
+selenium==4.11.2
 allure-pytest==2.13.2
 pytest==7.3.2
 webdriver-manager==3.8.6

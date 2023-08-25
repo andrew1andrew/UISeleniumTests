@@ -58,6 +58,28 @@ Autotests in this project are written in `Python` using `Selenium`.\
 <a href = "https://www.google.com/search?q=photo&tbm=isch&ved=2ahUKEwjks7LJiPOAAxXwW0EAHSoSBT0Q2-cCegQIABAA&oq=photo&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyBQgAEIAEMggIABCABBCxAzIICAAQgAQQsQM6BAgjECc6BwgjEOoCECc6CwgAEIAEELEDEIMBOgQIABADUMAGWNMWYPMZaAFwAHgAgAG6AYgBhgeSAQMwLjaYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=yyHmZKSiI_C3hbIPqqSU6AM&bih=963&biw=1920&hl=en">link</a>
 </br>
 
-10. :warning: Non-existent language in the
-<a href = "https://translate.google.co.uk/?hl=en&tab=TT">translator</a>
+10. :warning: Non-existent address in 
+<a href = "https://www.google.com/maps/@48.3774019,6.7023008,3z?hl=en&entry=ttu">google maps</a>
 </br>
+
+
+a name="terminal"><h2>:computer: Launching a docker container with further unloading of allure reports</h2></a>
+
+```
+
+docker build -t container .  
+docker run --rm -v .\allure_results\:/container_tests/allure_results container
+
+```
+<a name="12"><h2>:chart_with_downwards_trend: Allure  </a><a href="https://jenkins.autotests.cloud/job/Students/job/Aston/4/allure/">отчет</a></h2>
+
+- <a name="Allure_report1"><h3>Main page of allure report</h3></a>
+
+
+-  <a name="Allure_report2"><h3>Page with passed test</h3></a>
+
+
+<a name="Telegram"><h2>:iphone: Report with message in telegram chat</h2></a>
+
+
+<a name="Video"><h2>:movie_camera: Video of an example of passing tests</h2></a>
