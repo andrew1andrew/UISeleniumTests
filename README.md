@@ -63,7 +63,7 @@ Autotests in this project are written in `Python` using `Selenium`.\
 </br>
 
 
-a name="terminal"><h2>:computer: Launching a docker container with further unloading of allure reports</h2></a>
+<h2>:computer: Launching a docker container with further unloading of allure reports</h2></a>
 
 ```
 
