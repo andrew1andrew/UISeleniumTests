@@ -20,7 +20,7 @@ testing:
     - pip install -r requirements.txt
     - python3 -m pip uninstall -y urllib3-secure-extra
   script:
-     - pytest --alluredir=./allure-results Tests/Positive_cases
+     - pytest --alluredir=./allure-results Tests
   artifacts:
     when: always
     expire_in: 1 day
