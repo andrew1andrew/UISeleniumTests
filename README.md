@@ -72,6 +72,8 @@ docker build -t container .
 
 ```
 
+
+
 Launching a container and then deleting it after completion and uploading reports to the allure_results folder:
 ```
 
