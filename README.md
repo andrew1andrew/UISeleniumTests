@@ -88,10 +88,13 @@ docker run --rm -v .\allure_results\:/container_tests/allure_results container
 ![Allure screenshot_1](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/overview.jpg)
 
 
--  <a name="Allure_report2"><h3>Page with passed test</h3></a>
+-  <a name="Allure_report2"><h3>Page with passed tests</h3></a>
+![Allure screenshot_2](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/suites.jpg)
 
 
-<a name="Telegram"><h2>:iphone: Report with message in telegram chat</h2></a>
+-  <a name="Allure_report3"><h3>Creating an image in the allure report if the test is broken or failed</h3></a>
+![Allure screenshot_3](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/photo.jpg)
+
 
 
 <a name="Video"><h2>:movie_camera: Video of an example of passing tests</h2></a>
