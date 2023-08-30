@@ -94,7 +94,3 @@ docker run --rm -v .\allure_results\:/container_tests/allure_results container
 
 -  <a name="Allure_report3"><h3>Creating an image in the allure report if the test is broken or failed</h3></a>
 ![Allure screenshot_3](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/photo.jpg)
-
-
-
-<a name="Video"><h2>:movie_camera: Video of an example of passing tests</h2></a>
