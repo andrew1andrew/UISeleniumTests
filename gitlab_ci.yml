@@ -16,7 +16,6 @@ testing:
   before_script:
     - export DISPLAY=:1
     - export TEST_URL="https://www.google.com/"
-    - apt-get update
     - pip install -r requirements.txt
     - python3 -m pip uninstall -y urllib3-secure-extra
   script:

@@ -40,11 +40,6 @@ class AccountPage(BasePage):
             self.elements_are_visible(Locators.PASSWORD_INPUT)[1].send_keys(password)
             self.element_is_visible(Locators.ELEMS_GO_NEXT).click()
             self.sleep()
-        with allure.step(""):
-            self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
-            self.sleep()
-            self.elements_are_visible(Locators.BUTTON_SKIP_NEXT)[1].click()
-            time.sleep(2)
 
     def generation_username(self):
         try:

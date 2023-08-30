@@ -16,7 +16,7 @@ def driver():
     yield driver
     driver.quit()
 
-""""For docker"""
+# """"For docker"""
 # @pytest.fixture()
 # def driver():
 #     service = Service()
