@@ -63,18 +63,25 @@ Autotests in this project are written in `Python` using `Selenium`.\
 </br>
 
 
-<h2>:computer: Launching a docker container with further unloading of allure reports</h2></a>
+<h2>:computer: Running docker images</h2></a>
+
+Creating a Docker image with the tag/name container:
+```
+
+docker build -t container .
 
 ```
 
-docker build -t container .  
+Launching a container and then deleting it after completion and uploading reports to the allure_results folder:
+```
+
 docker run --rm -v .\allure_results\:/container_tests/allure_results container
 
 ```
 <a name="12"><h2>:chart_with_downwards_trend: Allure report</a><a></a></h2>
 
 - <a name="Allure_report1"><h3>Main page of allure report</h3></a>
-![Screenshot_6](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/overview.jpg)
+![Allure screenshot_1](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/overview.jpg)
 
 
 -  <a name="Allure_report2"><h3>Page with passed test</h3></a>
