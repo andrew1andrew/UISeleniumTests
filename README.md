@@ -74,7 +74,7 @@ docker run --rm -v .\allure_results\:/container_tests/allure_results container
 <a name="12"><h2>:chart_with_downwards_trend: Allure report</a><a></a></h2>
 
 - <a name="Allure_report1"><h3>Main page of allure report</h3></a>
-https://raw.githubusercontent.com/andrew1andrew/UISeleniumTests/dev/Design/overview.jpg
+https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/overview.jpg
 
 
 -  <a name="Allure_report2"><h3>Page with passed test</h3></a>
