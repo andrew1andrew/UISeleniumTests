@@ -13,7 +13,7 @@
 <a name="Description"><h2>Description</h2></a>
 Autotests in this project are written in `Python` using `Selenium`.\
 `Docker` - for running browsers in a container.\
-`Allure Report` - for visualization of test results.\
+`Allure Report` - for visualization of test results.
 
 <a name="Project"><h2>Project</h2></a>
 <code><a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI"> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="margin-right:20px" alt="GoogleLogo" width="272" height="92"/>  </p></a></code>Test automation project for <a target="_blank" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI">Google</a> search engine.
