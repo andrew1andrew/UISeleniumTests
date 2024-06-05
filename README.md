@@ -8,20 +8,17 @@
 <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/354321/selenium.svg" style="margin-right:20px" alt="selenium" width="50" height="50"/> </a>
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" style="margin-right:20px" alt="docker" width="50" height="50"/> </a>
 <a href="https://github.com/allure-framework" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/5879127?s=280&v=4" style="margin-right:20px" alt="allure" width="50" height="50"/> </a>
-<a href="https://about.gitlab.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" style="margin-right:20px" alt="pycharm" width="50" height="50"/> </a>
-<a href="https://web.telegram.org/k/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" style="margin-right:20px" alt="pycharm" width="50" height="50"/> </a> </p>
 </br>
 
 <a name="Description"><h2>Description</h2></a>
 Autotests in this project are written in `Python` using `Selenium`.\
-`Gitlab CI/CD` - CI/CD to run tests remotely.\
 `Docker` - for running browsers in a container.\
-`Allure Report` - for visualization of test results.\
-`Telegram Bot` - for notifications about test results.
+`Allure Report` - for visualization of test results.
 
 <a name="Project"><h2>Project</h2></a>
 <code><a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI"> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="margin-right:20px" alt="GoogleLogo" width="272" height="92"/>  </p></a></code>Test automation project for <a target="_blank" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI">Google</a> search engine.
 
+\
 <a name="Positive cases"><h2>:heavy_check_mark:  Positive cases:</h2></a>
 
 1. :newspaper:	Open the main <a href = "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjk7On8jvOAAxVFmFwKHWa3CZQQPAgI">google page</br></a>
@@ -63,23 +60,33 @@ Autotests in this project are written in `Python` using `Selenium`.\
 </br>
 
 
-<h2>:computer: Launching a docker container with further unloading of allure reports</h2></a>
+<h2>:computer: Running docker images</h2></a>
+
+Creating a Docker image with the tag/name container:
+```
+
+docker build -t container .
 
 ```
 
-docker build -t container .  
+
+\
+Launching a container and then deleting it after completion and uploading reports to the allure_results folder:
+```
+
 docker run --rm -v .\allure_results\:/container_tests/allure_results container
 
 ```
+\
 <a name="12"><h2>:chart_with_downwards_trend: Allure report</a><a></a></h2>
 
 - <a name="Allure_report1"><h3>Main page of allure report</h3></a>
+![Allure screenshot_1](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/overview.jpg)
 
 
--  <a name="Allure_report2"><h3>Page with passed test</h3></a>
+-  <a name="Allure_report2"><h3>Page with passed tests</h3></a>
+![Allure screenshot_2](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/suites.jpg)
 
 
-<a name="Telegram"><h2>:iphone: Report with message in telegram chat</h2></a>
-
-
-<a name="Video"><h2>:movie_camera: Video of an example of passing tests</h2></a>
+-  <a name="Allure_report3"><h3>Creating an image in the allure report if the test is broken or failed</h3></a>
+![Allure screenshot_3](https://github.com/andrew1andrew/UISeleniumTests/blob/2cd93eef951cce782c4925a2b7ec291f6a7b6e9f/Design/photo.jpg)
