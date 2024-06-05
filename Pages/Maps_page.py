@@ -8,4 +8,5 @@ class MapsPage(BasePage):
         maps_input = self.element_is_visible(Locators.INPUT_IN_GOOGLE_MAPS)
         maps_input.send_keys("qweasfdasfewqfqe")
         maps_input.send_keys(Keys.ENTER)
+        self.sleep()
         assert self.element_is_visible(Locators.TEXT_IN_GOOGLE_MAPS).text == "Google Maps can't find qweasfdasfewqfqe"

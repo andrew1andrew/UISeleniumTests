@@ -22,7 +22,7 @@ class PageLocators:
     SVG_ERROR_PAGE_OPENING = (By.CSS_SELECTOR, "svg[xmlns='http://www.w3.org/2000/svg']")
     RESULT_STATS = (By.CSS_SELECTOR, "div[id='result-stats']")
     GO_NEXT = (By.CSS_SELECTOR, "button[class*='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP']")
-    GO_TO_IMAGE = (By.CSS_SELECTOR, "a[jsname='mMVipe']")
+    GO_TO_IMAGE = (By.CSS_SELECTOR, "a[jsname*='VIftV']")
     GOOGLE_LENS = (By.CSS_SELECTOR, "svg[class*='sFpEPc']")
     INPUT_GOOGLE_LENS = (By.CSS_SELECTOR, "input[data-ved*='0CA4Q3vIIah']")
     SEARCH_GOOGLE_LENS = (By.CSS_SELECTOR, "div[data-ved*='0CA8Q']")
