@@ -3,8 +3,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import allure
 import os
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options
+from Pages.Base_page import BasePage
+from Pages.Main_page import MainPage
+from Pages.Account_page import AccountPage
+from Pages.Maps_page import MapsPage
 
 
 @pytest.fixture()
@@ -15,6 +17,7 @@ def driver():
     driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
+
 
 # """"For docker"""
 # @pytest.fixture()
@@ -30,8 +33,26 @@ def driver():
 #     yield driver
 #     driver.quit()
 
+@pytest.fixture(scope="function")
+def base_page(driver):
+    return BasePage(driver)
 
-"""Method that makes a picture in PNG format in the allure report if the test is broken or failed."""
+
+@pytest.fixture(scope="function")
+def main_page(driver):
+    return MainPage(driver)
+
+
+@pytest.fixture(scope="function")
+def account_page(driver):
+    return AccountPage(driver)
+
+
+@pytest.fixture(scope="function")
+def maps_page(driver):
+    return MapsPage(driver)
+
+
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item):
     outcome = yield
@@ -52,4 +73,3 @@ def pytest_runtest_makereport(item):
             )
         except Exception as e:
             print('Fail to take screen-shot: {}'.format(e))
-
